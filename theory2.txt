@@ -1,0 +1,20 @@
+port ko expose krna pada hai.
+port mapping 
+{docker run -it -p 1023:1025 mailhog/mailhog}
+{docker run -it -p 9000:1025 mailhog/mailhog}
+{docker run -it -p 1023:1025 -e key=value -e key =value mailhog/mailhog}
+this is for passing env to docker container
+
+
+
+caching hota hai, docker file sequence me run karega, 
+jaha tk kuch changes nhi hai wha tk cache se use kr lega,
+jha pe changes hue to build krne wo command fir se run hoga,
+isliye jo jyada change hone wale files hai use neeche rkhenge .
+
+these are called layers if we there is change in 4th command then from 4th all command will be executed again
+
+create repository and create image with that reponame with docker id;
+
+                  { rishuraj2401/goask;}
+                {docker push rishuraj2401;}

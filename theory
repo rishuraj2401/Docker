@@ -1,0 +1,113 @@
+ubuntu , debian , Alpine, fedora, centos :these are the various linux distribution , because linux is an open sorce platform so people can build thier own linux based os .
+Ubuntu Linux;
+<!-- docker run ubuntu -->
+<!-- docker image ls -->
+<!-- docker ps  --> show all running process
+<!-- docker ps -a  --> show all process stopped or running
+<!-- docker run -it ubuntu --> interactive
+<!-- history  --> to know all comand till now we have executed
+<!-- !2 --> execute that command number 
+<!-- apt --> package manager to install package 
+<!-- apt install nano -->
+Most used commands:
+  list - list packages based on package names
+  search - search in package descriptions
+  show - show package details
+  install - install packages
+  reinstall - reinstall packages
+  remove - remove packages
+  autoremove - Remove automatically all unused packages
+  update - update list of available packages
+  upgrade - upgrade the system by installing/upgrading packages
+  full-upgrade - upgrade the system by removing/installing/upgrading packages
+  edit-sources - edit the source information file
+  satisfy - satisfy dependency strings
+  <!-- apt update -->
+  <!-- nano --> a text editor
+  in linux every thing is a file , bin :(binary) program file, boot for boot files , dev for devices 
+
+<!-- pwd --> present working directory
+<!-- ls -->
+<!-- ls -1 -->
+<!-- ls -l -->
+<!-- cd  --> change dierctory 
+<!-- cd .. -->
+<!-- cd ~ --> for home directory
+<!-- mv test docker --> rename test folder to docker // 
+mv test /etc : to move the folder
+<!-- touch hello.txt --> create a new empty file hello.txt
+<!-- rm file.txt -->
+<!-- rm -r docker --> 
+<!-- cat file.txt--> see content of a file 
+<!-- cat file1.txt >file2.txt  --> to combine multiple files
+<!-- head -n 5 file.txt --> to see the first five line of a file
+<!-- tail -n 4 file.txt  --> to see the last 4 line of a file
+<!-- nano  --> to write something to a file
+redirection 
+standard input is keyboard , standard output is screen
+<!-- echo hello --> simply show hello 
+<!-- echo hello > hello.txt --> write heelo to a new file hello.txt
+
+
+
+Initialize a new Git repository:
+git init
+Clone a repository:
+git clone <repository_url>
+
+Check the status of your working directory:
+git status
+
+Add changes to the staging area:
+git add <file(s)>
+
+Commit changes to the repository:
+git commit -m "Your commit message"
+
+View commit history:
+git log
+
+Create a new branch:
+git branch <branch_name>
+
+
+Switch to a branch:
+git checkout <branch_name>
+(or use git switch in newer versions of Git)
+
+Create and switch to a new branch:
+git checkout -b <new_branch_name>
+(or use git switch -c in newer versions of Git)
+
+Merge branches:
+git merge <branch_name>
+Pull changes from a remote repository:
+git pull origin <branch_name>
+
+Push changes to a remote repository:
+git push origin <branch_name>
+
+See changes between branches or commits:
+git diff <source_branch> <target_branch>
+
+Undo changes in the working directory:
+git checkout -- <file>
+
+
+Discard changes in the staging area:
+git reset HEAD <file>
+
+Undo the last commit (local only):
+git reset --soft HEAD^
+
+Undo the last commit and discard changes (local only):
+git reset --hard HEAD^
+
+Create a tag:
+git tag -a <tag_name> -m "Tag message"
+
+List all tags:
+git tag
+
+Switch to a specific tag:
+git checkout tags/<tag_name>
